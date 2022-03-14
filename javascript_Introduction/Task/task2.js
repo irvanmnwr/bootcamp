@@ -1,20 +1,21 @@
 // nomor 1
-const Biodata= {
-  name : "irvan",
-  age : 23,
-  hobbies : ['futsal', 'baca'],
-  ismarried : false,
-  school : [{name : "min Kutablang", yearin : 2004, yearout: 2010, major: ""},
-  {name : "smpn 1 lsm", yearin : 2010, yearout: 2013, major: ""},
-  {name : "mosa banda aceh", yearin : 2013, yearout: 2016, major: "IPA"},
-  {name : "POLITEKNIK lsm", yearin : 2017, yearout: 2021, major: "TI"}],
-  Skills : [{name:"php",level: "begineer"},{name:"javascript",level: "begineer"}],
-  interestincoding: true,
-}
-console.log(Biodata)
+// const Biodata= {
+//   name : "irvan",
+//   age : 23,
+//   hobbies : ['futsal', 'baca'],
+//   ismarried : false,
+//   school : [{name : "min Kutablang", yearin : 2004, yearout: 2010, major: ""},
+//   {name : "smpn 1 lsm", yearin : 2010, yearout: 2013, major: ""},
+//   {name : "mosa banda aceh", yearin : 2013, yearout: 2016, major: "IPA"},
+//   {name : "POLITEKNIK lsm", yearin : 2017, yearout: 2021, major: "TI"}],
+//   Skills : [{name:"php",level: "begineer"},{name:"javascript",level: "begineer"}],
+//   interestincoding: true,
+// }
+// console.log(Biodata)
 
 //nomor 2
-// const bind = 90
+//tambah validasi harus number
+// const bind = 60
 // const bing = 91
 // const mtk = 90
 // const ipa = 90
@@ -23,8 +24,8 @@ console.log(Biodata)
 //     console.log(`rata-rata = ${rata}`)
 //     console.log(x)  
 // }
-// let rata = avg(bind+bing+mtk+ipa)
-// if(rata>100){
+// let rata = (bind+bing+mtk+ipa)/4
+// if(rata>100||rata<0){
 //   console.log("Nilai yang diinput melebihi ketentuan")
 // }else if(rata>89){
 //     nilai('A')
@@ -39,18 +40,18 @@ console.log(Biodata)
 // )
 
 //nomor 3
-// let printsegitiga = 5
-// let temp = []
-// if(printsegitiga != Number){
+// const printsegitiga = 5
+// let temp = ""
+// if(isNaN(printsegitiga)){
 //     console.log("Data harus number")
-// }
-
-// for(let x = printsegitiga; x > 0; x--){
+// }else{
+//   for(let x = printsegitiga; x > 0; x--){
 //     for(let y = 1; y <= x; y++ ){
-//         temp[y-1] = y
+//         temp = temp + y
 //     }
 //     console.log(temp)
-//     temp = []
+//     temp = ""
+// }
 // }
 
 // Nomor 4
