@@ -96,13 +96,11 @@
 //         return "Nilai akhir harus lebih besar dari nilai awal"
 //     }
 
-//     // let y = 0
 //     const hasil=[]
     
 //     for(let i=0;i<x;i++){
 //         if(awal<deret[i]&&deret[i]<akhir){
 //             hasil.push(deret[i])
-//             // y++
 //         }       
 //     }
     
