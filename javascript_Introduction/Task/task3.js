@@ -61,15 +61,12 @@
 
 // function searchname(character, lim, callbacknama){
 // const hasil = []
-// let j = 0
 // const y = name.length
 //     for(let i=0;i<y;i++){
-//         x = name[i].toString().toLowerCase()
-//         let check = x.includes(character)
-//             if(check == true){
-//                 hasil[j] = name[i]
-//                 j++
-//                 if(j==lim){
+//         let x = name[i].toLowerCase().includes(character)
+//             if(x == true){
+//                 hasil.push(name[i])  
+//                 if(hasil.length==lim){ 
 //                     break;
 //                 }
 //             }
@@ -78,11 +75,11 @@
 //     callbacknama(hasil)
 // }
 
-// nama = function(hasil) {
+// const nama = function(hasil) {
 //     console.log(hasil)
 // }
 
-// searchname('an',3 , nama)
+// searchname('an',4 , nama)
 
 // searchname('an', 3, (hasil)=>{
 //     console.log(hasil)
@@ -99,17 +96,17 @@
 //         return "Nilai akhir harus lebih besar dari nilai awal"
 //     }
 
-//     let y = 0
+//     // let y = 0
 //     const hasil=[]
     
 //     for(let i=0;i<x;i++){
 //         if(awal<deret[i]&&deret[i]<akhir){
-//             hasil[y]=deret[i]
-//             y++
+//             hasil.push(deret[i])
+//             // y++
 //         }       
 //     }
     
-//     if(y==0){
+//     if(hasil.length==0){
 //         return "Nilai tidak ditemukan"
 //     }
     
