@@ -34,17 +34,17 @@
 // polindrom('malam')
 
 //ReverseWord
-// const ReverseWord = (teks) =>
-//   new Promise((resolve, reject) => {
-//     let hasil = "";
-//     let x = teks.length - 1;
-//     while (x >= 0) {
-//       hasil = hasil + teks[x];
-//       x = x - 1;
-//     }
-//     resolve(hasil);
-//   });
+const ReverseWord = (teks) =>
+  new Promise((resolve, reject) => {
+    let hasil = "";
+    let x = teks.length - 1;
+    while (x >= 0) {
+      hasil = hasil + teks[x];
+      x = x - 1;
+    }
+    resolve(hasil);
+  });
 
-// ReverseWord("Minggu")
-//   .then((result) => console.log(result))
-//   .catch((error) => console.log("Error"));
+ReverseWord("Minggu")
+  .then((result) => console.log(result))
+  .catch((error) => console.log("Error"));

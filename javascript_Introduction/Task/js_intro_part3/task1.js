@@ -25,8 +25,8 @@ const cekHariKerja = (day) => {
 // }
 
 // [B]
-// cekHariKerja("senin")
-//   .then((result) => console.log(result))
-//   .catch((error) => console.log(error));
+cekHariKerja("minggu")
+  .then((result) => console.log(result))
+  .catch((error) => console.log(error));
 
-// cekhari("sein");
+// cekhari("senin");
