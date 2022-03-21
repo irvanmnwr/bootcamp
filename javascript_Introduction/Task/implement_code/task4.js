@@ -1,5 +1,5 @@
 //Deret
-const ReverseWord = (number) =>
+const divandsort = (number) =>
   new Promise((resolve, reject) => {
     number = new String(number + "0").split("");
     const temp = [];
@@ -17,6 +17,6 @@ const ReverseWord = (number) =>
     resolve(Number(hasil));
   });
 
-ReverseWord(5956560159466056)
+divandsort(5956560159466056)
   .then((result) => console.log(result))
   .catch((error) => console.log("Error"));

@@ -6,6 +6,7 @@ const cekpajak = (harga, pajak) => {
 };
 
 const cekpotongan = (harga, voucher) => {
+  let potongan;
   if (voucher == "FAZZFOOD50" && harga >= 50000) {
     potongan = (harga * 50) / 100;
     if (potongan >= 50000) {
@@ -23,7 +24,7 @@ const cekpotongan = (harga, voucher) => {
 };
 
 const cekongkir = (jarak) => {
-  ongkir = 5000;
+  let ongkir = 5000;
   if (jarak > 2) {
     return ongkir + (jarak - 2) * 3000;
   }
