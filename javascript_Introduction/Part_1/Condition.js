@@ -17,7 +17,6 @@
 // untuk pengecekkan object if(data.name)
 // untuk pengecekkan NaN if(isNaN(data))
 
-
 // Switch Case
 // const phone = "Blackberry"
 
