@@ -12,11 +12,6 @@ header {
   z-index: 1;
 }
 
-main {
-  max-width: 100%;
-  margin: 30px auto;
-}
-
 .banner {
   display: flex;
 }
@@ -82,27 +77,52 @@ main {
   flex-wrap: wrap;
 }
 
-.comic {
+/* .comic {
   margin: 10px 0px 30px 0;
   text-align: center;
   overflow-x: auto;
   white-space: nowrap;
+} */
+
+.container-movie {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-top: 10px;
 }
 
-.comic__image {
-  max-width: 100%;
-  width: 200px;
-  border-radius: 20px;
-  margin: 40px 10px;
-  border: 5px solid white;
-  padding: 30px;
+.card__movie {
+  margin-right: 20px;
+  display: inline-block;
+  height: 420px;
+  vertical-align: top;
+  margin-bottom: 30px;
 }
 
-.comic__image:hover {
-  position: relative;
-  top: -5px;
-  border: 6px solid #5f2eea;
+.card__upcoming {
+  margin-right: 20px;
+  display: inline-block;
+  height: 520px;
+  vertical-align: top;
+  margin-bottom: 30px;
+}
+
+.card__movie--body {
+  width: 100%;
+  white-space: normal;
+}
+
+.card__movie--desc {
+  display: none;
+}
+
+.card__movie:hover {
+  height: 520px;
+}
+.card__movie:hover .card__movie--desc {
+  display: block;
   cursor: pointer;
+  position: relative;
 }
 
 .movie__list--button {
@@ -125,16 +145,15 @@ main {
   color: #5f2eea;
   margin: 20px 10px;
 }
-
 .button__list:hover {
   background-color: #5f2eea;
   color: white;
 }
 
 .upcoming__list {
+  width: 100%;
   margin: 10px 0px 30px 0;
   text-align: center;
-  overflow-x: auto;
   white-space: nowrap;
 }
 
@@ -142,6 +161,10 @@ main {
   border-radius: 20px;
   margin: 40px 10px;
   padding: 3px;
+  display: inline-block;
+  /* height: 150px; */
+  vertical-align: top;
+  overflow-x: scroll;
 }
 
 .upcoming__list--img {
