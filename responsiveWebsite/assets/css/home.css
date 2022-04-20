@@ -6,12 +6,6 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header {
-  background-color: red;
-  position: sticky;
-  z-index: 1;
-}
-
 .banner {
   display: flex;
 }
@@ -50,14 +44,6 @@ header {
   color: #5f2eea;
 }
 
-.movie__list hr {
-  color: #5f2eea;
-  width: 20%;
-  text-align: left;
-  margin-left: 30px;
-  display: block;
-}
-
 .movie__list--header {
   padding: 30px 0px;
 }
@@ -69,7 +55,7 @@ header {
 .movie__list--header li {
   height: 80px;
   line-height: 80px;
-  width: 50%;
+  width: 100%;
 }
 
 .flex-list {
@@ -150,6 +136,10 @@ header {
   color: white;
 }
 
+.button__list a:hover {
+  color: white;
+}
+
 .upcoming__list {
   width: 100%;
   margin: 10px 0px 30px 0;
@@ -189,11 +179,9 @@ footer {
 }
 
 .login__card--img {
-  width: 100%;
+  width: 95%;
   object-fit: cover;
   display: flex;
-  max-width: 30px;
-  margin: 0px -15px;
 }
 
 .banner__overlay {
@@ -204,7 +192,6 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-left: -15px;
 }
 
 .detail__poster {
@@ -288,6 +275,95 @@ footer {
   border-radius: 20px;
   border: 5px solid white;
 }
-/* .detail__top{
 
-} */
+@media (max-width: 720px) {
+  .login__page {
+    display: none;
+  }
+  .login__form .col-5 {
+    width: 100%;
+    padding-bottom: 300px;
+    margin: 0px 0px;
+  }
+
+  .banner {
+    display: block;
+  }
+
+  .banner__caption {
+    flex: none;
+    padding: 40px 0px;
+    margin-top: 70px;
+  }
+
+  .banner__image--size {
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+  }
+
+  .banner__caption--header {
+    color: #5f2eea;
+    font-size: 25px;
+  }
+
+  .banner__caption--desc {
+    text-align: justify;
+    color: #8d8c8c;
+    line-height: 30px;
+    font-size: 25px;
+  }
+
+  .card__email {
+    padding: 10px;
+  }
+  .card__email .col-4 {
+    width: 100%;
+  }
+
+  footer .col-4 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  footer .col-2 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  footer .col-3 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .container__poster .col-4 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .container__poster .col-8 {
+    width: 100%;
+  }
+  .container__ticket .col-2 {
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+  }
+  .container__ticket hr {
+    display: none;
+  }
+
+  .container__order .col-7 {
+    width: 100%;
+  }
+  .container__order .col-5 {
+    width: 100%;
+    margin: 3px 0px;
+  }
+
+  .container__order h4 {
+    text-align: center;
+  }
+
+  .movie__selected {
+    display: none;
+  }
+}

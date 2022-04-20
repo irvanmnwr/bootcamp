@@ -14,7 +14,9 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-top container-fluid"
+    >
       <div class="container">
         <img
           src="assets/img/Tickitz_logo.png"
@@ -42,13 +44,17 @@
             </li>
           </ul>
           <div class="d-flex">
-            <button
-              type="button"
-              class="btn btn-primary"
-              style="background-color: #5f2eea; padding: 8px 28px"
+            <a
+              style="
+                text-decoration: none;
+                color: white;
+                background-color: #5f2eea;
+                padding: 8px 28px;
+              "
+              class="btn"
+              href="./login.html"
+              >Sign-up</a
             >
-              Sign-up
-            </button>
           </div>
         </div>
       </div>
@@ -69,7 +75,7 @@
       </div>
     </div>
     <div class="bg-light">
-      <div class="container container-movie">
+      <div class="container">
         <div class="movie__list">
           <div class="movie__list--header">
             <ul class="flex-list">
@@ -79,6 +85,9 @@
             </ul>
           </div>
         </div>
+      </div>
+
+      <div class="container container-movie">
         <div class="card card__movie text-center" style="width: 223px">
           <div class="card__movie--body">
             <img
@@ -91,7 +100,9 @@
             <div class="card__movie--desc">
               <p class="card-text">Genre</p>
               <button type="button" class="button__list col-8 mx-auto">
-                Details
+                <a href="./detail.html" style="text-decoration: none"
+                  >Details</a
+                >
               </button>
             </div>
           </div>
@@ -190,11 +201,6 @@
           <ul class="flex-list">
             <li>
               <h3 style="text-align: left">Upcoming Movies</h3>
-            </li>
-            <li>
-              <a href="#" style="padding-left: 80%; text-decoration: none"
-                >view all</a
-              >
             </li>
           </ul>
         </div>
@@ -305,7 +311,7 @@
         class="card text-center shadow p-3 mb-5 bg-body rounded"
         style="margin-top: 50px"
       >
-        <div class="card-body" style="padding: 50px">
+        <div class="card-body card__email" style="padding: 50px">
           <div class="mb-4">
             <h5 class="card-title">Be the vanguard of the</h5>
             <h2 style="font-size: 40px; color: #5f2eea">Moviegoers</h2>
@@ -370,7 +376,11 @@
               alt=""
               style="margin-right: 50px; margin-bottom: 17px"
             />
-            <img src="assets/img/studio3.png" alt="" />
+            <img
+              src="assets/img/studio3.png"
+              alt=""
+              style="margin-right: 50px; margin-bottom: 17px"
+            />
           </div>
           <div class="col-3">
             <h6>Follow us</h6>
